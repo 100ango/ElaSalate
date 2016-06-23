@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.BasemN.salaty.elasalaty">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".SilenceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.SilenceBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".UnsilenceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.UnsilenceBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".TazkeerBroadcastRecevier">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.TazkeerBroadcastRecevier" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".TimesAct"
+            android:screenOrientation="portrait" />
+        <activity android:name=".contactAct"></activity>
+
+        <receiver android:name=".SilenceBroadcastReceiver2">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.SilenceBroadcastReceiver2" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".UnsilenceBroadcastReceiver2">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.UnsilenceBroadcastReceiver2" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".SilenceBroadcastReceiver3">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.SilenceBroadcastReceiver3" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".UnsilenceBroadcastReceiver3">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.UnsilenceBroadcastReceiver3" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".SilenceBroadcastReceiver4">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.SilenceBroadcastReceiver4" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".UnsilenceBroadcastReceiver4">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.UnsilenceBroadcastReceiver4" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".SilenceBroadcastReceiver5">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.SilenceBroadcastReceiver5" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".UnsilenceBroadcastReceiver5">
+            <intent-filter>
+                <action android:name="com.bn.salaty.elasalaty.UnsilenceBroadcastReceiver5" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

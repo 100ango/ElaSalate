@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">إلا صلاتي</string>
+
+    <string-array name="tazkerat">
+        <item>صلي على محمد</item>
+        <item>أذكر الله</item>
+        <item>استغفر الله و أتوب إلية</item>
+        <item>سبحان الله العظيم</item>
+    </string-array>
+
+    <string name="tazkerat_prompt">إختر التذكيرة</string>
+
+</resources>

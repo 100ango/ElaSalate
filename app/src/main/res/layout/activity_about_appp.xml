@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253238">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/tool_bar_id"
+            layout="@layout/tool_bar2" />
+
+       <ImageView
+           android:layout_width="180dp"
+           android:layout_height="160dp"
+           android:layout_marginTop="2dp"
+           android:layout_gravity="center"
+           android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/textsss"
+            android:textSize="36sp"
+            android:layout_marginTop="10dp"
+            android:text="إلا صلاتي"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="** Contact Info **"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:textColor="#FFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:id="@+id/faceIV"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/facebook"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:id="@+id/InIV"
+                android:src="@drawable/linkedin"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:id="@+id/twitIV"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/twitter"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:id="@+id/googleIV"
+                android:src="@drawable/google"/>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/emailIV"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:textColor="#FFF"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tv_bg"
+            android:text="Basemads20@gmail.com"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

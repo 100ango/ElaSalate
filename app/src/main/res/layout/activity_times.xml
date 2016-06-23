@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timesbg"
+    tools:context="com.BasemN.salaty.elasalaty.TimesAct">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/desc1"
+                android:text="يتم تحديث الوقت تلقائيا عند فتح التطبيق وانت متصل بالإنترنت "/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp"
+                    android:id="@+id/tv3"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="ساعة"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp"
+                    android:id="@+id/tv2"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="دقيقة"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp"
+                    android:id="@+id/tv1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="الفرض"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edittext_bg"
+                    android:id="@+id/fagrhour"
+                    android:focusable="false" />
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:background="@drawable/edittext_bg"
+                    android:id="@+id/fagrMin"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:id="@+id/tv4"
+                    android:layout_margin="20dp"
+                    android:text="الفجر : "/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edittext_bg"
+                    android:id="@+id/zohrhour"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:background="@drawable/edittext_bg"
+                    android:id="@+id/zohrMin"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:id="@+id/tv5"
+                    android:layout_margin="20dp"
+                    android:text="الظهر : "/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edittext_bg"
+                    android:id="@+id/asrhour"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:background="@drawable/edittext_bg"
+                    android:id="@+id/asrMin"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:id="@+id/tv6"
+                    android:layout_margin="20dp"
+                    android:text="العصر : "/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:background="@drawable/edittext_bg"
+                    android:id="@+id/maghrebhour"/>
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:background="@drawable/edittext_bg"
+                    android:id="@+id/maghrebMin"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:id="@+id/tv7"
+                    android:layout_margin="20dp"
+                    android:text="المغرب :"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="20dp"
+                    android:focusable="false"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center"
+                    android:id="@+id/eshahour"/>
+
+
+                <EditText
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="center"
+                    android:focusable="false"
+                    android:id="@+id/eshaMin"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:layout_margin="20dp"
+                    android:id="@+id/tv8"
+                    android:text="العشاء :"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

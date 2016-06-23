@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.BasemN.salaty.elasalaty.MainActivity">
+
+    <include
+        android:id="@+id/app_bar_id"
+        layout="@layout/tool_bar" />
+
+
+    <TextView
+        android:id="@+id/texthint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="إجعل الهاتف صامت وقت الصلاوات"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/changeTimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:layout_margin="5dp"
+            android:text="الأوقات"
+            android:textSize="24sp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/startSched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="24sp"
+            android:background="@drawable/edittext_bg"
+            android:text="تفعيل"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تذكيرات إسلامية"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:id="@+id/texthint2"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/colorAccent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="14dp"
+            android:id="@+id/testsund"
+            android:src="@drawable/sound_icon"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/tazkerat"
+            android:background="@drawable/spinner_bg"
+            android:prompt="@string/tazkerat_prompt" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right|top"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="65dp"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/min10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنبية كل 10 دقايق"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/min20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنبية كل 20 دقيقة" />
+
+            <RadioButton
+                android:id="@+id/min30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنبية كل 30 دقيقة"/>
+
+        </RadioGroup>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Play"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#FFF"
+            android:id="@+id/playTazkeer"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
